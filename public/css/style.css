@@ -1,0 +1,602 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* header */
+
+header {
+  margin-bottom: 15px;
+  background-color:rgba(0, 0, 0, 0.5);
+  border-radius: 60px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.brand {
+  margin-left: 10px;
+  color: whitesmoke;
+  opacity: 2;
+}
+
+.mainMenu {
+    display: none;
+}
+
+.fa-bars {
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+}
+
+/****************************************************/
+
+nav {
+    align-items: center;
+  }
+
+  nav .mainMenu {
+    list-style: none;
+  }
+  
+  nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    transition: 0.2s ease;
+  }
+
+  .active a {
+    color: aqua;
+  }
+
+  .active a:hover {
+    background-color: #ffffff;
+    color: #050c2a;
+    transition: ease-in .5s;
+}
+  nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  nav .mainMenu .closeMenu,
+  .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+  }
+
+  nav .logo {
+    margin: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+/***************************************************/
+
+
+.introduction{
+    height: 90vh;
+}
+
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-container video{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%,-50%);
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 11rem;
+}
+
+figure {
+  height: 260px;
+  width: 220px;
+  border-radius: 10px;
+}
+
+.perfil {
+  border-radius: 150px;
+}
+
+.info {
+  margin-top: 20px;
+}
+
+p {
+  color: whitesmoke;
+  font-size: 17px;
+}
+
+.title {
+  font-family: 'Alumni Sans Inline One', cursive;
+  font-size: 35px;
+  display: block;
+  white-space: nowrap;
+  width: 28ch;
+  animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+  overflow:hidden;
+  margin: 0 auto;
+}
+  
+@keyframes typing {
+  from { width: 0 }
+}
+  
+@keyframes blink {
+   50% { border-color: transparent }
+}
+
+
+.button-home {
+  margin-top: 20px;
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
+  border: 1px solid black;
+  background-color: black;
+  text-transform: uppercase;
+  box-shadow: 0px 10px 15px rgba(255, 255, 255, 0.3);
+  transition: all ease 0.3s;
+  cursor: pointer;
+  color: white;
+}
+
+.button-home a{
+  text-decoration: none;
+}
+
+.button-home:hover a{
+  color: black;
+}
+
+.button-home:hover {
+  transform: translateY(-10px);
+  border: 1px solid white;
+  background-color: white;
+  color: black;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.6);
+}
+
+.projects {
+  background: rgb(0, 0, 0);
+  height: 190vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+span {
+  color: white;
+  margin-top: 1.3rem;
+  font-family: 'Alumni Sans Inline One', cursive;
+  font-size: 45px;
+}
+
+.card {
+  height: 400px;
+  width: 280px;
+  margin-top: 40px;
+  border: 1px solid #fff;
+  text-align: center;
+  border-radius: 20px;
+  transition: all 1s;
+}
+
+.card figure {
+  width: 100%;
+  height: 240px;
+}
+
+.card img {
+  border-radius: 20px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+h4 {
+  margin-top: 2rem;
+  color: #fff;
+}
+
+.card p {
+  font-size: 12.5px;
+}
+
+button.repositorio {
+  transition: .5s ease;
+  color: rgb(0, 0, 0);
+  position: relative;
+  top: -200px;
+  transform: translate(0%, -50%);
+  opacity: 0.0;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #a9a7a7;
+  background: grey;
+  cursor: pointer;
+}
+
+.effect-card {
+  height: 240px;
+}
+
+.card .effect-card:hover img {
+  opacity: 0.3;
+}
+
+.card .effect-card:hover .repositorio {
+  opacity: 1;
+  transform: translateY(40px);
+}
+
+.card:hover {
+  transform: translateY(-7%);
+}
+
+.projects button {
+  margin-top: 1.8rem;
+}
+
+.about-me {
+  background: linear-gradient(to bottom, black, white 80%);
+  height: 130vh;
+  text-align: center;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.about-container div {
+  margin-bottom: 2rem;
+}
+
+.about-me figure {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  transition: all 1s;
+}
+
+.about-me figure:hover {
+  animation: skew 3s infinite;
+  transform: skew(40deg);
+  animation-direction: alternate;
+}
+
+.about-container span {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+
+.about-me .button-home {
+  margin-top: 0px;
+}
+
+.contacto {
+  text-align: center;
+  height: 70vh;
+  background-color: white;
+}
+
+.contacto span {
+  color: black;
+}
+
+.contacto form {
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 336px;
+  align-items: center;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  box-shadow: 0px 10px 125px rgb(0 0 0 / 90%);
+}
+
+.contacto form label {
+  margin-top: 1.3rem;
+}
+
+.contacto form input {
+  width: 200px;
+  height: 25px;
+  border: 0;
+  outline: 0;
+}
+
+.contacto form input:hover {
+  border-bottom: 1px solid black;
+}
+
+.contacto form textarea {
+  width: 250px;
+  height: 240px;
+  border: 0;
+  outline: 0;
+}
+
+.contacto form textarea:hover {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.contacto form button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 1.3rem;
+  padding-top: 5px;
+  border-top: 5px solid black;
+  background-color: white;
+}
+
+.social-network i {
+  color: black;
+}
+
+
+@media (max-width: 767px) {
+    nav .mainMenu {
+      height: 100vh;
+      position: fixed;
+      right: 0px;
+      left: 0px;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      transition: top 1s ease 0s;
+      display: none;
+    }
+    
+    nav .mainMenu .closeMenu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    nav .openMenu {
+      display: block;
+    }
+    nav .mainMenu li a:hover {
+      background: none;
+      color: aqua;
+    }
+    .icons i {
+      display: inline-block;
+      padding: 12px;
+    }
+  }
+
+/***************************************************/
+
+
+
+@media (min-width: 768px) {
+    
+  /* header */
+
+  .brand {
+      margin-top: -10px;
+  }
+
+  .burger {
+      display: none;
+      height: 20px;
+  }
+
+  .mainMenu {
+      display: flex;
+      width: 500px;
+      justify-content: space-around;
+  }
+  
+  header li {
+      list-style: none;
+  }
+
+  nav .mainMenu li a {
+    text-transform: none;
+    color: white;
+  }
+
+  /* main */
+
+  .introduction {
+    height: 100vh;
+  }
+
+  .about {
+    padding-top: 9rem;
+  }
+
+  .about figure {
+    height: 360px;
+    width: 320px;
+  }
+
+  .info {
+    width: 640px;
+  }
+
+  .title {
+    font-size: 39px;
+  }
+  
+  p {
+    font-size: 21px;
+  }
+
+  .projects {
+    height: 135vh;
+  }
+
+  .projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 700px;
+  }
+
+  .about-me {
+    height: 57vh;
+  }
+
+  .about-container {
+    margin-top: 3.6rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: inherit;
+    margin-bottom: 1.4rem;
+  }
+
+  .contacto {
+    height: 75vh;
+  }
+
+  .contacto form {
+    width: 470px;
+  }
+
+  .contacto form input {
+    width: 280px;
+  }
+
+  .contacto form textarea {
+    width: 320px;
+  }
+
+}
+
+
+@media (min-width: 1168px) {
+  
+  /* header */
+  
+  .mainMenu {
+    width: 700px;
+  }
+  
+  /* main */
+
+  .about {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 15.4rem;
+  }
+
+  .projects {
+    height: 83vh;
+  }
+
+  
+  .projects-container {
+    width: 950px;
+  }
+
+
+
+
+}
+
+
+
+@media (min-width: 1410px) {
+  
+  /* header */
+  
+
+  /* main */
+
+  .about figure {
+    height: 460px;
+    width: 420px;
+  }
+
+  .perfil {
+    border-radius: 200px;
+  }
+
+  .title {
+    font-size: 43px;
+  }
+  
+  p {
+    font-size: 25px;
+  }
+
+  .button-home {
+    width: 133px;
+    height: 51px;
+    border-radius: 100px;
+  }
+
+  .projects-container {
+    width: 1150px;
+  }
+
+  .contacto {
+    height: 70vh;
+  }
+
+}

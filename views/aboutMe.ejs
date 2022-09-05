@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/aboutMe.css">
+    <script src="https://kit.fontawesome.com/3a97c09c78.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  
+
+    <title>Portafolio</title>
+</head>
+<body>
+    
+    <section class="introduction">
+    <%- include ("./partials/header") %>
+        <main>
+            <div id="about-container">
+                <div class="descripcion">
+                    <figure class="foto"><img src="img/foto.jpeg" alt=""></figure>
+                    <p>Hola me presento soy Juan Ignacio Mendieta tengo 19 años ahora mismo estoy en mi segundo año de la facultad 
+                        cursando el segundo cuatrimestre, en el que tengo todas las materias aprobadas hasta el momento. Llevo un año 
+                        en la programacion donde actualmente me encuentro realizando cursos de FreeCodeCamp y OpenBootCamp para seguir generando
+                        mmas conocimiento. 
+                    </p>
+                </div>
+                <div class="group-knowledge">
+                    <h1>Tecnologias:</h1>
+                    <div class="about-container">
+                        <div>
+                            <figure><img src="img/Javascript.png" alt=""></figure>
+                            <span>Javascript</span>
+                        </div>
+                        <div>
+                            <figure><img src="img/Html.png" alt=""></figure>
+                            <span>Html</span>
+                        </div>
+                        <div>
+                            <figure><img src="img/css.png" alt=""></figure>
+                            <span>Css</span>
+                        </div>
+                        <div>
+                            <figure><img src="img/React.png" alt=""></figure>
+                            <span>React</span>
+                        </div>
+                        <div>
+                            <figure><img src="img/node.png" alt=""></figure>
+                            <span>Node Js</span>
+                        </div>
+                        <div>
+                            <figure><img src="img/Sequelize.png" alt=""></figure>
+                            <span>Sequelize</span>
+                        </div>
+                        <div>
+                            <figure><img src="img/GitHub.png" alt=""></figure>
+                            <span>GitHub</span>
+                        </div>
+                        <div>
+                            <figure><img src="img/MySQL.png" alt=""></figure>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    <%- include ("./partials/footer") %>
+    <script src="js/burger.js"></script>
+   
+</body>
+</html>

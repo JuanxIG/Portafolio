@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 7rem;
+    margin-bottom: 30px;
+}    
+
+
+@media (min-width: 767px) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 800px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+
+    }    
+}
+
+
+@media (min-width: 1200px) {
+    main {
+        width: 1000px;
+    }    
+}
+
+@media (min-width: 1500px) {
+    main {
+        width: 1800px;
+    }    
+    footer {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+}

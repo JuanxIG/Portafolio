@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/3a97c09c78.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  
+
+    <title>Portafolio</title>
+</head>
+<body>
+    
+    <section class="introduction">
+    <%- include ("./partials/header") %>
+        <main>
+            <div class="video-container">
+                <video src="img/fondo.mp4" autoplay loop muted></video>
+            </div>
+            <div class="about">
+                <figure>
+                    <img src="img/foto.jpeg" alt="" class="perfil">
+                </figure>
+                <div class="info">
+                    <p class="title">Hola soy Juan Ignacio Mendieta.</p>
+                    <p class="text">Actualmente tengo 19 años y soy aprendiz en el campo de la programación, donde estoy en busca de 
+                        potenciarme en este rubro del cual tanto me gusta, en el que trato de mejorar todos los dias.</p>
+                    <div><a href="img/Curriculum Juan Ignacio Mendieta.pdf" download="Curriculum Juan Ignacio Mendieta"><button class="button-home">Descargar CV</button></a></div>
+                </div>
+            </div>
+            </section>
+            <section class="projects" id="portafolio">
+              <span>Proyectos</span>
+              <div class="projects-container">
+                    <div class="card">
+                        <div class="effect-card">
+                            <figure><img src="img/WineOn.png" alt=""></figure>
+                            <a href="https://github.com/JuanxIG/WineOn.git"><button class="repositorio"><i class="fa-solid fa-code"></i>CODE</button></a>
+                        </div>
+                            <h4>WineOn</h4>
+                            <p>Este fue un ecommerce realizado en el curso de digital house donde se ven las mayoria de funciones esecianles que tiene que cumplir una pagina de este tipo</p>
+                    </div>
+                    <div class="card">
+                        <div class="effect-card">
+                            <figure><img src="img/WineOnD.png" alt=""></figure>
+                            <a href="https://github.com/JuanxIG/DashboardWineOn.git"><button class="repositorio" ><i class="fa-solid fa-code"></i> CODE</button></a>
+                        </div>
+                        <h4>WineOn Dashboard</h4>
+                        <p>Este es un dashboard donde consume las apis creadas por WineOn y muestra algunas estadisticas como por ejemplo: El total de bodegas, vinos o inclusive cual fue el ultimo vino agregado</p>
+                    </div>
+                    <div class="card">
+                        <div class="effect-card">
+                            <figure><img src="img/Contactos.png" alt=""></figure>
+                            <a href="https://github.com/JuanxIG/Contactos.git"><button class="repositorio" ><i class="fa-solid fa-code"></i> CODE</button></a>
+                        </div>                        
+                        <h4>Contactos</h4>
+                        <p>Aca muestre un formulario de contactos donde todo lo que se envie, se sube al Local Storage donde despues se renderiza en la misma pagina</p>
+                    </div>
+                </div>
+                <a href="/proyectos"><button class="button-home">See More</button></a>
+            </section>
+            <section class="about-me" id="about-me">
+                <span>About me</span>
+                <div class="about-container">
+                    <div>
+                        <figure><img src="img/Javascript.png" alt=""></figure>
+                        <span>Javascript</span>
+                    </div>
+                    <div>
+                        <figure><img src="img/Html.png" alt=""></figure>
+                        <span>Html</span>
+                    </div>
+                    <div>
+                        <figure><img src="img/css.png" alt=""></figure>
+                        <span>Css</span>
+                    </div>
+                    <div>
+                        <figure><img src="img/React.png" alt=""></figure>
+                        <span>React</span>
+                    </div>
+                </div>
+                <a href="/aboutMe"><button class="button-home" id="button-about">+Info</button></a>
+            </section>
+            <section class="contacto" id="contacto">
+                <span>Contact</span>
+                    <form action="https://formsubmit.co/juanimen34@gmail.com" method="post">
+                        <label for="">Nombre: </label>
+                        <input type="text" placeholder="Pedro">
+                        <label for="">Email: </label>
+                        <input type="text" placeholder="xxxxx@gmail.com">
+                        <label for="">Comentario</label>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Escribe un mensaje..."></textarea>
+                        <button type="submit" class="button-home">Enviar</button>
+                        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                        <input type="hidden" name="_captcha" value="false">
+                    </form>
+            </section>
+        </main>
+    
+    <%- include ("./partials/footer") %>
+    <script src="js/burger.js"></script>
+   
+</body>
+</html>

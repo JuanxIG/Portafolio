@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/proyectos.css">
+    <script src="https://kit.fontawesome.com/3a97c09c78.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  
+
+    <title>Portafolio</title>
+</head>
+<body>
+    <%- include ("./partials/header") %>
+        <main>
+            <div class="card">
+                <div class="effect-card">
+                    <figure><img src="img/WineOn.png" alt=""></figure>
+                    <a href="https://github.com/JuanxIG/WineOn.git"><button class="repositorio"><i class="fa-solid fa-code"></i>CODE</button></a>
+                </div>
+                    <h4>WineOn</h4>
+                    <p>Este fue un ecommerce realizado en el curso de digital house donde se ven las mayoria de funciones esecianles que tiene que cumplir una pagina de este tipo.</p>
+            </div>
+            <div class="card">
+                <div class="effect-card">
+                    <figure><img src="img/WineOnD.png" alt=""></figure>
+                    <a href="https://github.com/JuanxIG/DashboardWineOn.git"><button class="repositorio" ><i class="fa-solid fa-code"></i> CODE</button></a>
+                </div>
+                <h4>WineOn Dashboard</h4>
+                <p>Este es un dashboard donde consume las apis creadas por WineOn y muestra algunas estadisticas como por ejemplo: El total de bodegas, vinos o inclusive cual fue el ultimo vino agregado.</p>
+            </div>
+            <div class="card">
+                <div class="effect-card">
+                    <figure><img src="img/Contactos.png" alt=""></figure>
+                    <a href="https://github.com/JuanxIG/Contactos.git"><button class="repositorio" ><i class="fa-solid fa-code"></i> CODE</button></a>
+                </div>                        
+                <h4>Contactos</h4>
+                <p>Aca muestre un formulario de contactos donde todo lo que se envie, se sube al Local Storage donde despues se renderiza en la misma pagina.</p>
+            </div>
+            <div class="card">
+                <div class="effect-card">
+                    <figure><img src="img/GaleriaReact.png" alt=""></figure>
+                    <a href="https://github.com/JuanxIG/React-Galeria.git"><button class="repositorio"><i class="fa-solid fa-code"></i>CODE</button></a>
+                </div>
+                    <h4>React Galeria</h4>
+                    <p>Un proyecto simple pero fue hecho con la manera de probar como hacer una galeria utiizando react y framer motion.</p>
+            </div>
+            <div class="card">
+                <div class="effect-card">
+                    <figure><img src="img/Formulario.png" alt=""></figure>
+                    <a href="https://github.com/JuanxIG/Formulario.git"><button class="repositorio"><i class="fa-solid fa-code"></i>CODE</button></a>
+                </div>
+                    <h4>Formulario(Backend)</h4>
+                    <p>Formulario con el objetivo de mostrar las validaciones del backend utilizando multer.</p>
+            </div>
+        </main>
+    <%- include ("./partials/footer") %>
+    <script src="js/burger.js"></script>
+</body>
+</html>
