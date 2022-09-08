@@ -14,8 +14,10 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la carpeta de las Vistas
 
 // En que puerto levanto
-app.listen(3000, () => {
-    console.log("Servidor corriendo en el puerto 3000")
+
+const PORT = process.env.PORT || 4000
+app.listen(PORT, () => {
+    console.log("Servidor corriendo en el puerto", PORT)
 })
 
 // Rutas principales
